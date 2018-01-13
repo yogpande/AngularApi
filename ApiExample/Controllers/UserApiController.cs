@@ -10,7 +10,7 @@ using System.Web.Http.Cors;
 
 namespace ApiExample.Controllers
 {
-    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://localhost:4200,http://educationapp.apphb.com", headers: "*", methods: "*")]
     public class UserApiController : ApiController
     {
         Model1 db = new Model1();
